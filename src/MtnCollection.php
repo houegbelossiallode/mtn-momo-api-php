@@ -46,4 +46,9 @@ class MtnCollection extends MtnMomo
         return parent::createTransaction($data, $transactionUuid);
     }
 
+     public function getRequestToPayStatus(string $referenceId)
+     {
+            return parent::getTransaction($referenceId);
+     }
+
 }
